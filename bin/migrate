@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+#
+# Use bundle exec bin/migrate to bring the db up to latest
+#
+require_relative "../db/mongo_migration_task.rb"
+MongoMigrationTask.new.run
